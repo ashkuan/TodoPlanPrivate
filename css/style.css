@@ -1,0 +1,37 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9fafb;
+}
+
+.task-item:hover {
+    background-color: rgba(243, 244, 246, 0.8);
+}
+
+.collapsible-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.expanded .collapsible-content {
+    max-height: 2000px;
+}
+
+.progress-bar {
+    transition: width 0.5s ease-in-out;
+}
+
+.today {
+    background-color: #fdf5e6 !important;
+    border-left: 4px solid #f59e0b;
+}
+
+@media print {
+    .print-friendly {
+        break-inside: avoid;
+    }
+
+    .no-print {
+        display: none;
+    }
+}
